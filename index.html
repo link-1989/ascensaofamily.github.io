@@ -11,7 +11,7 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       background: #000;
       color: white;
       margin: 0;
@@ -24,6 +24,18 @@
       width: 100%;
       max-width: 320px;
       text-align: center;
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .logo {
@@ -46,47 +58,67 @@
     .headline {
       font-size: 16px;
       margin-bottom: 20px;
-      color: #fff;
       font-weight: bold;
     }
 
     .btn {
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 12px;
 
       width: 100%;
       padding: 18px;
-      margin: 10px 0;
+      margin: 12px 0;
 
-      border-radius: 14px;
+      border-radius: 16px;
       text-decoration: none;
       color: white;
       font-size: 17px;
-      font-weight: bold;
+      font-weight: 600;
 
       background: #111;
-      border: 1px solid rgba(212,175,55,0.3);
+      border: 1px solid rgba(212,175,55,0.25);
 
-      transition: 0.2s ease;
+      transition: all 0.15s ease;
     }
 
     .btn i {
+      position: absolute;
+      left: 18px;
       font-size: 20px;
     }
 
-    .btn:hover {
-      transform: scale(1.03);
-      border-color: #D4AF37;
-      box-shadow: 0 0 10px rgba(212,175,55,0.3);
+    /* Press effect */
+    .btn:active {
+      transform: scale(0.95);
     }
 
-    /* cores ícones */
+    /* Hover glow */
+    .btn:hover {
+      box-shadow: 0 0 12px rgba(212,175,55,0.2);
+    }
+
+    /* BOTÃO WHATSAPP DESTACADO */
+    .whats {
+      background: linear-gradient(135deg, #25D366, #1ebe5d);
+      border: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .whats i {
+      color: #000;
+    }
+
+    .whats:active {
+      transform: scale(0.95);
+    }
+
+    /* Cores ícones */
     .insta i { color: #E1306C; }
     .face i { color: #1877F2; }
     .tiktok i { color: #ffffff; }
-    .whats i { color: #25D366; }
 
   </style>
 </head>
@@ -100,7 +132,7 @@
     <h1>Ascensão Family</h1>
 
     <div class="headline">
-      Queres viver mais e melhor?
+      Queres viver até aos 150 anos?
     </div>
 
     <a class="btn insta" href="https://instagram.com/ascensaoportugal" target="_blank">
@@ -116,7 +148,7 @@
     </a>
 
     <a class="btn whats" href="https://wa.me/351965446229" target="_blank">
-      <i class="fab fa-whatsapp"></i> WhatsApp
+      <i class="fab fa-whatsapp"></i> Falar no WhatsApp
     </a>
 
   </div>
