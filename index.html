@@ -2,8 +2,6 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-
-  <!-- Mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Ascensão Family</title>
@@ -14,7 +12,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: radial-gradient(circle at top, #1a1a1a, #000);
+      background: #000;
       color: white;
       margin: 0;
       padding: 15px;
@@ -24,42 +22,49 @@
 
     .container {
       width: 100%;
-      max-width: 300px;
+      max-width: 320px;
       text-align: center;
     }
 
     .logo {
-      width: 85px;
-      height: 85px;
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
       object-fit: contain;
       background: white;
-      padding: 8px;
-      margin: 0 auto 10px auto;
+      padding: 6px;
+      margin: 5px auto 10px auto;
       display: block;
     }
 
     h1 {
-      margin: 8px 0 20px 0;
+      margin: 5px 0 10px 0;
       font-size: 20px;
-      letter-spacing: 1px;
       color: #D4AF37;
+    }
+
+    .headline {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #fff;
+      font-weight: bold;
     }
 
     .btn {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 12px;
 
       width: 100%;
-      padding: 13px;
+      padding: 18px;
       margin: 10px 0;
 
-      border-radius: 12px;
+      border-radius: 14px;
       text-decoration: none;
       color: white;
-      font-size: 15px;
+      font-size: 17px;
+      font-weight: bold;
 
       background: #111;
       border: 1px solid rgba(212,175,55,0.3);
@@ -68,17 +73,19 @@
     }
 
     .btn i {
-      font-size: 18px;
+      font-size: 20px;
     }
 
     .btn:hover {
-      transform: scale(1.02);
+      transform: scale(1.03);
       border-color: #D4AF37;
-      box-shadow: 0 0 8px rgba(212,175,55,0.3);
+      box-shadow: 0 0 10px rgba(212,175,55,0.3);
     }
 
+    /* cores ícones */
     .insta i { color: #E1306C; }
     .face i { color: #1877F2; }
+    .tiktok i { color: #ffffff; }
     .whats i { color: #25D366; }
 
   </style>
@@ -92,12 +99,20 @@
 
     <h1>Ascensão Family</h1>
 
+    <div class="headline">
+      Queres viver até aos 150 anos?
+    </div>
+
     <a class="btn insta" href="https://instagram.com/ascensaoportugal" target="_blank">
       <i class="fab fa-instagram"></i> Instagram
     </a>
 
     <a class="btn face" href="https://facebook.com/AscensaoFamily" target="_blank">
       <i class="fab fa-facebook-f"></i> Facebook
+    </a>
+
+    <a class="btn tiktok" href="https://www.tiktok.com/@ascensaoportugal" target="_blank">
+      <i class="fab fa-tiktok"></i> TikTok
     </a>
 
     <a class="btn whats" href="https://wa.me/351965446229" target="_blank">
